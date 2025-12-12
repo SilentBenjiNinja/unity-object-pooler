@@ -2,7 +2,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Core.Creation
+namespace bnj.object_pooler.Runtime
 {
     [HideMonoScript]
     public abstract class MB_ObjectPooler<T> : MonoBehaviour where T : Component

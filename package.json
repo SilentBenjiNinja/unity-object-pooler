@@ -1,6 +1,6 @@
 {
   "name": "com.bnj.object-pooler",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "displayName": "BNJ - Object Pooler",
   "description": "This is the lovely description to this very useful package.",
   "unity": "2020.3",

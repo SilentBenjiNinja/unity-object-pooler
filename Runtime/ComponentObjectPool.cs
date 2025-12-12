@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Core.Creation
+namespace bnj.object_pooler.Runtime
 {
     public class ComponentObjectPool<T> where T : Component
     {
