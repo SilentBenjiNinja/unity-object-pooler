@@ -1,8 +1,8 @@
 {
   "name": "com.bnj.object-pooler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "BNJ - Object Pooler",
-  "description": "This is the lovely description to this very useful package.",
+  "description": "* Pools commonly used objects like projectiles, enemies, effects, etc.\n* Stores references to the most important Component instead of the GameObject for easy modification access after spawning",
   "unity": "2020.3",
   "author": {
     "name": "SilentBenjiNinja",
