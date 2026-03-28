@@ -22,11 +22,21 @@ namespace bnj.object_pooler.Runtime
 #endif
         [SerializeField] T _prefab;
 
+        /// <summary>
+        /// The prefab used to instantiate pooled objects.
+        /// </summary>
+        protected T Prefab => _prefab;
+
 #if ODIN_INSPECTOR
         [BoxGroup("Object Pool")]
         [LabelWidth(100)]
 #endif
         [SerializeField, Range(1, 128)] int _startAmount = 16;
+
+        /// <summary>
+        /// The number of instances to pre-warm on initialisation, as set in the Inspector.
+        /// </summary>
+        protected int StartAmount => _startAmount;
 
 #if ODIN_INSPECTOR
         [BoxGroup("Object Pool")]
@@ -39,12 +49,6 @@ namespace bnj.object_pooler.Runtime
         /// Defaults to this transform if left unassigned.
         /// </summary>
         protected Transform Parent => _parent == null ? transform : _parent;
-
-        /// <summary>The prefab used to instantiate pooled objects.</summary>
-        protected T Prefab => _prefab;
-
-        /// <summary>The number of instances to pre-warm on initialisation, as set in the Inspector.</summary>
-        protected int StartAmount => _startAmount;
 
 #if ODIN_INSPECTOR
         [BoxGroup("Object Pool")]
