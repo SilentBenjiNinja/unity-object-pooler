@@ -1,8 +1,8 @@
 {
   "name": "com.bnj.object-pooler",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "BNJ - Object Pooler",
-  "description": "* Pools commonly used objects like projectiles, enemies, effects, etc.\n* Stores references to the most important Component instead of the GameObject for easy modification access after spawning",
+  "description": "A generic component-based object pool for Unity. Derive from MB_ObjectPooler to pre-warm and reuse pooled instances by component type, avoiding runtime allocations for frequently spawned objects like projectiles, enemies, and effects. Odin Inspector is supported but not required.",
   "unity": "2020.3",
   "author": {
     "name": "SilentBenjiNinja",
